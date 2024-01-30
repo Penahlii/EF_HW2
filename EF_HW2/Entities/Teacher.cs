@@ -24,5 +24,5 @@ public class Teacher : BaseEntity
     [Column (TypeName = "money")]
     public int Salary { get; set; } 
 
-    public List<Lecture> Lectures { get; set; }
+    public ICollection<Lecture> Lectures { get; set; }
 }

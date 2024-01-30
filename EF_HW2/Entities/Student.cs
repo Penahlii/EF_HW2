@@ -18,5 +18,5 @@ public class Student : BaseEntity
     [Range(0, 5, ErrorMessage = "Rating must be in the range from 0 to 5")]
     public int Rating { get; set; }
 
-    public List<Group> Groups { get; set; }
+    public ICollection<Group> Groups { get; set; }
 }

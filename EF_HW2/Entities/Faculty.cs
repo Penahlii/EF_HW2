@@ -9,5 +9,5 @@ public class Faculty : BaseEntity
     [Column (TypeName = "nvarchar(100)")] // Attribute ile olmur deye OnModelCreatingde Unique Verilib
     public string Name { get; set; }
 
-    public List<Department> Departments { get; set; }   // Navigation Property
+    public ICollection<Department> Departments { get; set; }   // Navigation Property
 }

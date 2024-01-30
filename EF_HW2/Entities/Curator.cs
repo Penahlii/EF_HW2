@@ -13,5 +13,5 @@ public class Curator : BaseEntity
     [Column(TypeName = "nvarchar(max)")]
     public string surname { get; set; }
 
-    public List<Group> Groups { get; set; }
+    public ICollection<Group> Groups { get; set; }
 }

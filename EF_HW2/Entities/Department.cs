@@ -28,5 +28,5 @@ public class Department : BaseEntity
     
     // Navigation Properties
     public Faculty Faculty { get; set; }  
-    public List<Group> Groups { get; set; }
+    public ICollection<Group> Groups { get; set; }
 }

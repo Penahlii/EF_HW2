@@ -9,5 +9,5 @@ public class Subject : BaseEntity
     [Column (TypeName = "nvarchar(100)")] // Uniqe In Context
     public string Name { get; set; }
 
-    public List<Lecture> Lectue { get; set; }
+    public ICollection<Lecture> Lectue { get; set; }
 }

@@ -14,7 +14,7 @@ public class Lecture : BaseEntity
     [ForeignKey (nameof(Teacher))]
     public int TeacherId { get; set; }
 
-    public List<Group> Groups { get; set; }
+    public ICollection<Group> Groups { get; set; }
     public Subject Subject { get; set; }
     public Teacher Teacher { get; set; }
 }

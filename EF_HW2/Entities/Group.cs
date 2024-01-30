@@ -17,7 +17,7 @@ public class Group : BaseEntity
     public int DepartmentId { get; set; }
     public Department Department { get; set; }
 
-    public List<Curator> Curators { get; set; }
-    public List<Lecture> Lectures { get; set; }
-    public List<Student> Students { get; set; }
+    public ICollection<Curator> Curators { get; set; }
+    public ICollection<Lecture> Lectures { get; set; }
+    public ICollection<Student> Students { get; set; }
 }
